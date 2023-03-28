@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Biglietto Treno Form</title>
+
+</head>
+
+<body>
+
+  <div class="logo">
+    <img src="assets/img/train.png" alt="">
+  </div>
+
+  <div class="main-wrapper">
+
+    <div class="container">
+      <h1>Calcola il prezzo del biglietto</h1>
+
+      <!--INPUT-->
+      <div class="input-area">  
+
+        <div class="row">
+
+          <div class="col">
+            <label for="name">Nome e Cognome</label>
+            <input type="text" id="name" placeholder="Nome Cognome">
+          </div>
+
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input type="number" id="km" placeholder="Km">
+          </div>
+
+          <div class="col">
+            <label for="fasciaEta">Fascia età</label>
+
+            <select name="fasciaEta" id="fasciaEta">
+              <option value="">Seleziona l'età</option>
+              <option value="minorenne">Under 18</option>
+              <option value="adulto">Adulto</option>
+              <option value="senior">Over 65</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+            <button id="genera" class="btn">Genera</button>
+          </div>
+
+          <div class="col">
+            <button id="annulla" class="btn">Annulla</button>
+          </div>
+
+        </div>
+
+      </div>
+      <!--/INPUT-->
+
+
+
+    </div>
+
+    <!--TICKET AREA-->
+    <div class="container">
+      <section class="ticket-area hide">
+        <h1>Il tuo biglietto</h1>
+
+        <div class="ticket">
+          <h2>Dettagli passeggero</h2>
+          
+          <div class="row">
+
+            <div class="col">
+
+                <div class="name-box">
+                  <h3>Nome passeggero</h3>
+                  <h4 id="outputName">Marco Capone</h4>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+              <table>
+                <thead>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice</th>
+                  <th>Costo biglietto</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td> <span id="outputOfferta">Biglietto standard</span> </td>
+                    <td> <span id="outputCarrozza">5</span> </td>
+                    <td> <span id="outputCodice">530945</span> </td>
+                    <td> <span id="outputPrezzo">&euro; 100.00</span> </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+        </div>
+
+    </section>
+    </div>      
+    <!--/TICKET AREA-->
+
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

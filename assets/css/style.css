@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0;
+
+}
+
+h2{
+  text-transform: uppercase;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  width: 120px;
+  padding: 13px;
+  filter: ;
+
+}
+
+.hide{
+  display: none;
+}
+
+.main-wrapper{
+  background-color: #2DBA78;
+  color: white;
+  height: 100vh;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.input-area .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  padding: 5px 10px;
+  background-color: white;
+  color: #2DBA78;
+  border: 2px solid #2DBA78;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #2DBA78;
+  color: white;
+}
+
+.input-area,
+.ticket{
+  background-color: white;
+  color: #2DBA78;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-area .col{
+  text-align: center;
+  padding: 30px;
+}
+
+.input-area label,
+.input-area input,
+.input-area select{
+  display: block;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.input-area input,
+.input-area select{
+  border: 2px solid #2DBA78;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.input-area input:focus,
+.input-area select:focus{
+  background-color: #2DBA78;
+  color: white;
+}
+
+.ticket{
+  border-radius: 0;
+  text-align: left;
+  color: black;
+}
+
+.ticket h2{
+  padding-bottom: 10px;
+}
+
+.ticket-area .name-box{
+  background-color: lightgray;
+  padding: 10px 10px 100px 10px;
+  text-align: left;
+}
+
+.name-box h3{
+  text-transform: uppercase;
+  padding: 7px 0 10px 0;
+}
+
+.ticket-area .row{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 1px solid #2DBA78;
+  border-bottom: 1px solid #2DBA78;
+}
+
+table{
+  margin-left: 20px;
+}
+
+table td,
+table th{
+  text-align: left;
+  min-width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+table th{
+  color: #2DBA78;
+}
